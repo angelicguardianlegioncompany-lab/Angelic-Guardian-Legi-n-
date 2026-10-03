@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGL — Angelic Guardian Legion</title>
+<style>
+:root{
+  --bg:#07090d;--panel:#10141b;--panel2:#0c1016;--text:#f4f5f7;
+  --muted:#9ba3b2;--line:#ffffff12;--accent:#d9dde6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;background:
+  radial-gradient(circle at 50% -10%,#273040 0,#10151d 28%,#07090d 62%);
+  color:var(--text);line-height:1.6;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:20;
+  display:flex;align-items:center;justify-content:center;gap:24px;
+  padding:16px 18px;background:#07090ddd;backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);overflow-x:auto;
+}
+nav a{color:#bfc5d0;text-decoration:none;font-size:13px;white-space:nowrap}
+nav a:hover{color:#fff}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:100px 20px 60px;
+}
+.hero-inner{max-width:900px}
+.badge{font-size:11px;letter-spacing:.28em;color:#8f98a8;margin-bottom:18px}
+.logo{
+  font-size:clamp(72px,17vw,170px);font-weight:900;letter-spacing:.09em;
+  line-height:.9;text-shadow:0 0 40px #ffffff22;
+}
+.subtitle{letter-spacing:.34em;color:#b2b9c7;font-size:clamp(11px,2vw,17px);margin:20px 0 34px}
+.hero p{max-width:680px;margin:auto;color:#9ba3b2}
+.btn{
+  display:inline-block;margin-top:30px;padding:13px 24px;border:1px solid #697180;
+  border-radius:999px;color:#fff;text-decoration:none;font-size:13px;
+  transition:.25s
+}
+.btn:hover{background:#fff;color:#080a0e;transform:translateY(-2px)}
+section{max-width:1120px;margin:auto;padding:95px 22px}
+.section-tag{font-size:11px;letter-spacing:.22em;color:#7f899a;margin-bottom:8px}
+h2{font-size:clamp(32px,6vw,48px);line-height:1.1;margin-bottom:14px}
+.lead{color:var(--muted);max-width:780px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{
+  background:linear-gradient(145deg,var(--panel),var(--panel2));
+  border:1px solid var(--line);border-radius:20px;padding:24px;
+  transition:.25s
+}
+.card:hover{transform:translateY(-4px);border-color:#ffffff27}
+.icon{font-size:25px;margin-bottom:10px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p,.card li{color:#9ba3b2;font-size:14px}
+.card ul{padding-left:19px;margin-top:10px}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.game{
+  min-height:130px;padding:22px;border-radius:18px;border:1px solid var(--line);
+  background:linear-gradient(150deg,#151a23,#0c1016)
+}
+.game strong{display:block;font-size:20px;margin-bottom:6px}
+.rule{border-left:2px solid #737c8c;padding-left:18px;margin:12px 0}
+.number{font-size:12px;letter-spacing:.15em;color:#7f899a}
+.competitive-list{counter-reset:item;display:grid;gap:12px}
+.comp{
+  padding:18px 20px;background:#0e131a;border:1px solid var(--line);
+  border-radius:14px;color:#dce0e7
+}
+.comp span{color:#858e9e;margin-right:10px}
+.note{
+  margin-top:22px;padding:18px;border:1px solid #ffffff16;border-radius:14px;
+  color:#929aaa;background:#0a0e13
+}
+footer{text-align:center;padding:40px 20px;color:#747c8b;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:650px){
+  nav{justify-content:flex-start;gap:17px}
+  section{padding:75px 18px}
+  .subtitle{letter-spacing:.2em}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#inicio">AGL</a>
+  <a href="#comunidad">COMUNIDAD</a>
+  <a href="#juegos">JUEGOS</a>
+  <a href="#ayudas">AYUDAS</a>
+  <a href="#convivencia">CONVIVENCIA</a>
+  <a href="#justo">JUEGO JUSTO</a>
+  <a href="#competitivo">COMPETITIVO</a>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="hero-inner">
+    <div class="badge">EST. AGL • ANGELIC GUARDIAN LEGION</div>
+    <div class="logo">AGL</div>
+    <div class="subtitle">ANGELIC GUARDIAN LEGION</div>
+    <p>Una comunidad para jugar, convivir, mejorar y competir. Una misma identidad, diferentes juegos y una sola legión.</p>
+    <a class="btn" href="#comunidad">CONOCER AGL</a>
+  </div>
+</header>
+
+<section id="comunidad">
+  <div class="section-tag">01 / IDENTIDAD</div>
+  <h2>Una comunidad, muchos juegos.</h2>
+  <p class="lead">AGL será una comunidad basada principalmente en videojuegos y convivencia entre miembros, con espacios para equipos, ayudas y actividades competitivas.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🎮</div><h3>Juegos</h3><p>Espacios para Fortnite, Free Fire, Roblox y otros juegos que se incorporen a la comunidad.</p></div>
+    <div class="card"><div class="icon">🤝</div><h3>Comunidad</h3><p>Jugar con otros miembros, conocer personas y crear un ambiente respetuoso.</p></div>
+    <div class="card"><div class="icon">🏆</div><h3>Competitivo</h3><p>Clasificaciones, rangos y actividades competitivas basadas en datos verificables.</p></div>
+  </div>
+</section>
+
+<section id="juegos">
+  <div class="section-tag">02 / JUEGOS</div>
+  <h2>Juegos de la comunidad</h2>
+  <p class="lead">La lista puede crecer conforme AGL incorpore nuevas comunidades y equipos.</p>
+  <div class="games">
+    <div class="game"><strong>Fortnite</strong><span>Equipos y partidas</span></div>
+    <div class="game"><strong>Free Fire</strong><span>Equipos y competitivo</span></div>
+    <div class="game"><strong>Roblox</strong><span>Comunidad y experiencias</span></div>
+    <div class="game"><strong>Otros</strong><span>Próximamente</span></div>
+  </div>
+</section>
+
+<section id="ayudas">
+  <div class="section-tag">03 / AYUDAS</div>
+  <h2>Ayudas y equipos</h2>
+  <p class="lead">Un espacio para organizar apoyo entre miembros, especialmente en juegos de batalla y actividades por equipos.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🛡️</div><h3>Team</h3><p>Organización de equipos para jugar juntos en juegos de batalla.</p></div>
+    <div class="card"><div class="icon">💬</div><h3>Apoyo</h3><p>Los miembros pueden compartir consejos, estrategias y ayuda relacionada con el juego.</p></div>
+    <div class="card"><div class="icon">🎯</div><h3>Entrenamiento</h3><p>Cuando exista un entrenador o coach designado, podrá ayudar a mejorar las habilidades de los integrantes.</p></div>
+  </div>
+</section>
+
+<section id="convivencia">
+  <div class="section-tag">04 / CONVIVENCIA</div>
+  <h2>Convivencia</h2>
+  <p class="lead">AGL también busca que sus integrantes puedan convivir fuera de las partidas.</p>
+  <div class="grid">
+    <div class="card"><h3>Jugar con otros</h3><p>Encuentra miembros con quienes compartir partidas y formar equipos.</p></div>
+    <div class="card"><h3>Canales de voz</h3><p>Platica y coordínate con otros integrantes respetando las reglas de la comunidad.</p></div>
+    <div class="card"><h3>Conocer más</h3><p>Conoce nuevos integrantes y participa en actividades de la comunidad.</p></div>
+    <div class="card"><h3>Hacer amigos</h3><p>Construye relaciones de amistad dentro de un espacio respetuoso.</p></div>
+  </div>
+</section>
+
+<section id="justo">
+  <div class="section-tag">05 / JUEGO JUSTO</div>
+  <h2>Juego justo</h2>
+  <p class="lead">La competencia de AGL debe basarse en habilidad, práctica y respeto.</p>
+  <div class="card">
+    <div class="rule"><strong>No exploits</strong><br><span class="muted">No utilizar errores o vulnerabilidades del juego para obtener ventajas injustas.</span></div>
+    <div class="rule"><strong>No hacks</strong><br><span class="muted">No utilizar software o herramientas externas para obtener ventajas ilegítimas.</span></div>
+    <div class="rule"><strong>No trampa</strong><br><span class="muted">Competir de forma limpia y respetar las reglas del juego correspondiente.</span></div>
+    <div class="rule"><strong>No team o wars injustas</strong><br><span class="muted">Evitar acuerdos o enfrentamientos que rompan las reglas establecidas.</span></div>
+    <div class="rule"><strong>Mejorar con entrenamiento</strong><br><span class="muted">Aprender y practicar con apoyo de entrenadores o coaches cuando estén disponibles.</span></div>
+  </div>
+</section>
+
+<section id="competitivo">
+  <div class="section-tag">06 / COMPETITIVO</div>
+  <h2>Sistema competitivo</h2>
+  <p class="lead">Esta sección podrá mostrar clasificaciones y estadísticas por juego. Cuando se publiquen resultados, los datos deberán provenir de fuentes reales y verificables proporcionadas por creadores, administradores o fuentes oficiales del juego correspondiente.</p>
+
+  <div class="competitive-list">
+    <div class="comp"><span>01</span> Clasificar en ciertos juegos por rangos.</div>
+    <div class="comp"><span>02</span> Clasificar por actividad.</div>
+    <div class="comp"><span>03</span> Clasificar a los jugadores del mes según el juego correspondiente.</div>
+    <div class="comp"><span>04</span> Clasificaciones por actividad.</div>
+    <div class="comp"><span>05</span> Clasificaciones de reclutamiento.</div>
+    <div class="comp"><span>06</span> Clasificaciones de otros clanes o comunidades.</div>
+  </div>
+
+  <div class="note">
+    <strong>Datos y verificaciones</strong><br>
+    Las tablas competitivas de AGL deberán utilizar datos reales y exactos proporcionados por creadores, administradores o fuentes oficiales o verificables del juego correspondiente. No se inventarán estadísticas.
+  </div>
+</section>
+
+<section id="miembros">
+  <div class="section-tag">07 / MIEMBROS</div>
+  <h2>Miembros de AGL</h2>
+  <p class="lead">Aquí se podrán mostrar los integrantes, sus rangos, juegos principales y estadísticas verificadas.</p>
+  <div class="grid">
+    <div class="card"><div class="number">SSS</div><h3>Flores</h3><p>Miembro de AGL</p></div>
+    <div class="card"><div class="number">LÍDER</div><h3>Próximamente</h3><p>Perfil del líder</p></div>
+    <div class="card"><div class="number">MIEMBRO</div><h3>Próximamente</h3><p>Nuevo integrante</p></div>
+  </div>
+</section>
+
+<section id="alianzas">
+  <div class="section-tag">08 / ALIANZAS</div>
+  <h2>Alianzas</h2>
+  <p class="lead">Espacio para mostrar clanes y comunidades aliadas de AGL.</p>
+  <div class="grid">
+    <div class="card"><h3>Próximamente</h3><p>Clan aliado.</p></div>
+    <div class="card"><h3>¿Tu clan?</h3><p>Las solicitudes de alianza podrán gestionarse desde la comunidad.</p></div>
+  </div>
+</section>
+
+<footer>© 2026 AGL — ANGELIC GUARDIAN LEGION</footer>
+</body>
+</html>
